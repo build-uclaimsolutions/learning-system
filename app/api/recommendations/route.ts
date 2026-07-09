@@ -11,9 +11,6 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '',
 )
 
-interface RecommendationsRequest {
-  userId: string
-}
 
 export async function GET(request: NextRequest) {
   try {

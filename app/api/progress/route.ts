@@ -6,10 +6,6 @@ const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY || '',
 )
 
-interface ProgressQuery {
-  userId: string
-  timeframe?: 'week' | 'month' | 'all'
-}
 
 export async function GET(request: NextRequest) {
   try {
